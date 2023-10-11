@@ -1,12 +1,8 @@
 import React from 'react';
+import Title from '../../components/Title/Title';
 
 const About = () => {
-    return (
-        <div>
-            <h2>소개</h2>
-            <p>이곳은 소개 페이지 입니다.</p>
-        </div>
-    );
+    return <Title title="소개" desc="이곳은 소개 페이지 입니다." />;
 };
 
 export default About;

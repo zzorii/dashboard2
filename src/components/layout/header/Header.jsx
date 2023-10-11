@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import Gnb from './Gnb';
 
 // function Header() {}
 const Header = () => {
@@ -9,6 +10,7 @@ const Header = () => {
             <Logo>
                 <Link to="/">logo</Link>
             </Logo>
+            <Gnb />
         </HeaderWrapper>
     );
 };
@@ -21,9 +23,10 @@ const Logo = styled.h1`
 
 const HeaderWrapper = styled.header`
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 70px;
+    padding: 0 30px;
     background-color: #eee;
 `;
 

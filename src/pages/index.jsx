@@ -1,8 +1,12 @@
-import React from 'react';
-import Title from '../components/Title/Title';
+import React from "react";
 
 const Home = () => {
-    return <Title title="Home" desc="This is the home page." />;
+  return (
+    <div>
+      <h2>홈</h2>
+      <p>이곳은 첫페이지입니다.</p>
+    </div>
+  );
 };
 
 export default Home;

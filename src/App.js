@@ -1,16 +1,16 @@
 import React from 'react';
 import Layout from './components/layout/Layoyt';
-import { Reset } from 'styled-reset';
 import { Route, Routes } from 'react-router-dom';
 import Home from './pages';
 import About from './pages/About';
 import GlobalStyles from './styles/GlobalStyles.styles';
+import { ChakraProvider, CSSReset } from '@chakra-ui/react';
 import './App.scss';
 
 function App() {
     return (
-        <>
-            <Reset />
+        <ChakraProvider>
+            <CSSReset />
             <GlobalStyles />
             <Layout>
                 <Routes>
@@ -18,7 +18,7 @@ function App() {
                     <Route path="/about" element={<About />} />
                 </Routes>
             </Layout>
-        </>
+        </ChakraProvider>
     );
 }
 

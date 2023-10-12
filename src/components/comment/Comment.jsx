@@ -1,14 +1,12 @@
 import React from 'react';
-import { formatDate } from './UtilityFunctions';
 import UserInfo from './UserInfo';
 
 function Comment(user) {
-    const { author, text, date } = user;
     return (
         <div className="comment">
-            <UserInfo user={author} />
-            <div className="comment-text">{text}</div>
-            <div className="comment-date">{formatDate(date)}</div>
+            <UserInfo />
+            <div className="comment-text">넘나 귀여운 고양이예요. 겨울이는 러시안블루인가요?</div>
+            <div className="comment-date">2023.03.10</div>
         </div>
     );
 }

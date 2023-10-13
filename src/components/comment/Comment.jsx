@@ -1,7 +1,7 @@
 import React from 'react';
 import UserInfo from './UserInfo';
 
-function Comment(user) {
+function Comment() {
     return (
         <div className="comment">
             <UserInfo />

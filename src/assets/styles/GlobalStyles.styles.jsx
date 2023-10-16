@@ -5,7 +5,8 @@ const GlobalStyles = createGlobalStyle`
 ${reset}
 
     :root {
-        --primary: #8D86D5;
+        --primary: #4318FF;
+        --primary-dark: #2B3674;
         --S_Light: #CBC8EC;
         --primary-light: rgba(90, 84, 164, 0.80);
         
@@ -43,6 +44,8 @@ ${reset}
         --font-small: 0.8rem
         --max-width: 1200px;
         --header-height: 60px;
+
+        --link-default: #F4F7FE;
     }
     body {
          background: url(2.jpg) no-repeat 0 0 !important;
@@ -58,7 +61,7 @@ ${reset}
     /* 기본 폰트 설정 */
     body, html {
         line-height: 1.5;
-        font-family: 'Spoqa Han Sans Neo', "Malgun Gothic", "맑은 고딕", sans-serif;
+        font-family: "Poppins", "Malgun Gothic", "맑은 고딕", sans-serif;
         font-weight: 400;
         color: #333;
       }

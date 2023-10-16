@@ -1,17 +1,18 @@
-import { createGlobalStyle } from "styled-components";
-import reset from "styled-reset";
+import { createGlobalStyle } from 'styled-components';
+import reset from 'styled-reset';
 const GlobalStyles = createGlobalStyle`
 
 ${reset}
 
     :root {
-        --primary: #120E46;
+        --primary: #8D86D5;
         --S_Light: #CBC8EC;
         --primary-light: rgba(90, 84, 164, 0.80);
+        
         --primary-1: #8A87B3;
         --primary-2: #8D86D5;
         --primary-3: #908EAE;
-        // --S_Light: red;
+
         --secondary: #FCA311;
         --secondary-light: #FFBA32;
         --secondary-dark: #C28400;
@@ -43,12 +44,12 @@ ${reset}
         --max-width: 1200px;
         --header-height: 60px;
     }
-    // body {
-    //     background: url(images/1.png) no-repeat 100% 0 !important;
-    //     #root {
-    //         opacity: 0.5 !important;
-    //     }
-    // }
+    body {
+         background: url(2.jpg) no-repeat 0 0 !important;
+         #root {
+             opacity: 0.8 !important;
+         }
+    }
     *{
         box-sizing: border-box;
         margin: 0;

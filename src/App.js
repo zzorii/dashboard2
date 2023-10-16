@@ -3,9 +3,8 @@ import Layout from './components/layout/Layoyt';
 import { Route, Routes } from 'react-router-dom';
 import Home from './pages';
 import About from './pages/About';
-import GlobalStyles from './styles/GlobalStyles.styles';
 import { ChakraProvider, CSSReset, theme } from '@chakra-ui/react';
-import './App.scss';
+import GlobalStyles from './assets/styles/GlobalStyles.styles';
 
 function App() {
     return (

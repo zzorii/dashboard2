@@ -1,15 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Gnb = () => {
+    const location = useLocation();
+
     return (
         <GnbWapper>
             <ul>
-                <li>
+                <li className={location.pathname === '/' ? 'active' : ''}>
                     <Link to="/">홈</Link>
                 </li>
-                <li>
+                <li className={location.pathname === '/about' ? 'active' : ''}>
                     <Link to="/about">소개</Link>
                 </li>
             </ul>
@@ -29,6 +31,11 @@ const GnbWapper = styled.nav`
                 }
             }
         }
+    }
+    &.active {
+        // Add styles for the active state
+        color: #ffaad2;
+        font-weight: 700;
     }
 `;
 

@@ -16,29 +16,29 @@ const Gnb = () => {
                     </Link>
                 </li>
                 <li>
-                    <Link to="#">
+                    <Link to="/market">
                         <AiOutlineShoppingCart />
                         NFT Marketplace
                     </Link>
                 </li>
                 <li>
-                    <Link to="#">
+                    <Link to="/tables">
                         <BsBarChartFill />
                         Tables
                     </Link>
                 </li>
                 <li>
-                    <Link to="#">
+                    <Link to="/kanban">
                         <BsBarChartFill /> Kanban
                     </Link>
                 </li>
                 <li>
-                    <Link to="#">
+                    <Link to="/profile">
                         <BsBarChartFill /> Profile
                     </Link>
                 </li>
                 <li>
-                    <Link to="#">
+                    <Link to="/signin">
                         <BsBarChartFill /> Sign in
                     </Link>
                 </li>

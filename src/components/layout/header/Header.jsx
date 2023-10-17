@@ -25,6 +25,7 @@ const HeaderStyle = styled(Heading)`
         text-transform: uppercase;
         text-align: center;
         font-size: 26px;
+        /* font-family: 'Poppins', sans-serif; */
         color: var(--primary-dark);
         span {
             font-weight: 700;

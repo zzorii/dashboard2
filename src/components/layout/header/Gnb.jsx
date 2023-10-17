@@ -10,7 +10,7 @@ const Gnb = () => {
     return (
         <GnbWapper>
             <ul>
-                <li>
+                <li className="active">
                     <Link to="/">
                         <AiFillHome /> Dashboard
                     </Link>
@@ -28,13 +28,19 @@ const Gnb = () => {
                     </Link>
                 </li>
                 <li>
-                    <Link to="#">Kanban</Link>
+                    <Link to="#">
+                        <BsBarChartFill /> Kanban
+                    </Link>
                 </li>
                 <li>
-                    <Link to="#">Profile</Link>
+                    <Link to="#">
+                        <BsBarChartFill /> Profile
+                    </Link>
                 </li>
                 <li>
-                    <Link to="#">Sign in</Link>
+                    <Link to="#">
+                        <BsBarChartFill /> Sign in
+                    </Link>
                 </li>
             </ul>
 
@@ -54,19 +60,25 @@ const GnbWapper = styled.nav`
     ul {
         li {
             margin-left: 10px;
+            &.active a {
+                color: var(--primary-dark);
+                font-weight: 700;
+            }
             a {
-                color: #333;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                padding: 16px 0;
+                color: var(--secondary-grey-600);
+                font-weight: 500;
                 &:hover {
-                    color: #ffaad2;
-                    font-weight: 700;
+                    color: var(--primary-dark);
                 }
             }
+            svg {
+                font-size: 20px;
+            }
         }
-    }
-    &.active {
-        // Add styles for the active state
-        color: #ffaad2;
-        font-weight: 700;
     }
 `;
 

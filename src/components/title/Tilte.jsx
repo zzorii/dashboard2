@@ -7,7 +7,7 @@ const Title = (props) => {
             <Heading as={'h2'} fontSize={'34px'} fontWeight={700}>
                 {props.title}
             </Heading>
-            <Text variant={'txt164'}>{props.desc}</Text>
+            {/* <Text variant={'txt164'}>{props.desc}</Text> */}
         </VStack>
     );
 };

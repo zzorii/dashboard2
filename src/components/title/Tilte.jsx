@@ -1,24 +1,13 @@
 import React from 'react';
-import { VStack, Breadcrumb, BreadcrumbItem, BreadcrumbLink } from '@chakra-ui/react';
+// import { Link } from 'react-router-dom';
+// import { Link } from '@reach/router';
+import { VStack, Heading, Text } from '@chakra-ui/react';
 
 const Title = (props) => {
     return (
-        <VStack spacing={10}>
-            <Breadcrumb>
-                <BreadcrumbItem>
-                    <BreadcrumbLink href="#">Home</BreadcrumbLink>
-                </BreadcrumbItem>
-
-                <BreadcrumbItem>
-                    <BreadcrumbLink href="#">Docs</BreadcrumbLink>
-                </BreadcrumbItem>
-
-                <BreadcrumbItem isCurrentPage>
-                    <BreadcrumbLink href="#">Breadcrumb</BreadcrumbLink>
-                </BreadcrumbItem>
-            </Breadcrumb>
-            <h2>{props.title}</h2>
-            {/* <p>{props.desc}</p> */}
+        <VStack spacing={4}>
+            <Heading as={'h2'}>{props.title}</Heading>
+            <Text variant={'text164'}>{props.desc}</Text>
         </VStack>
     );
 };

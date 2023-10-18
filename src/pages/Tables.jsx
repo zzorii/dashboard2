@@ -1,10 +1,11 @@
 import React from 'react';
+import Title from '../components/title/Tilte';
 
 const Tables = () => {
     return (
-        <div style={{ display: 'block' }}>
-            <h2>Tables</h2>
-        </div>
+        <>
+            <Title title="Tables" desc="이 페이지는 tables 페이지 입니다." />
+        </>
     );
 };
 

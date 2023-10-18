@@ -1,9 +1,11 @@
 import { extendTheme } from '@chakra-ui/react';
+import { textTheme } from './components/Text';
 // import { containerTheme } from './components/container';
 
 const theme = extendTheme({
     components: {
         // Container: containerTheme,
+        Text: textTheme,
     },
     styles: {
         global: {

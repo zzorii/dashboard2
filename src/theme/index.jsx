@@ -18,10 +18,11 @@ const theme = extendTheme({
                 fontFamily: 'Poppins',
                 fontSize: '16px',
                 fontWeight: '400',
+                color: '#2B3674',
             },
             // styles for the `a`
             a: {
-                color: '#000000',
+                color: '#2B3674',
                 _hover: {
                     textDecoration: 'none !important',
                 },
@@ -35,12 +36,7 @@ const theme = extendTheme({
         4: '25px',
     },
     colors: {
-        text_default: '#3a3a3a',
-        black: '#000000',
-        text_Gray02: '#000001',
-        Secondary_V: '#A796FF',
-        primary_V: '#6F36FF',
-        primary_b: '#413FA0',
+        secondary_grey_700: 'red',
     },
 });
 

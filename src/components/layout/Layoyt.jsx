@@ -16,13 +16,14 @@ const Layout = (props) => {
 };
 
 const Wrap = styled.div`
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
+    padding-left: 290px;
     background: var(--secondary-grey-300, #f4f7fe);
     #main {
         flex: 1;
-        padding: 30px;
+        padding: 50px 20px;
     }
 `;
 

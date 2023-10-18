@@ -157,7 +157,6 @@ const txt155 = defineStyle({
     fontSize: '15px',
     fontWeight: '500',
     fontFamily: 'Spoqa Han Sans Neo',
-    color: '#9F9FBA',
 });
 
 const txt154 = defineStyle({

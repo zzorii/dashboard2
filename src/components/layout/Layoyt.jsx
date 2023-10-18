@@ -19,6 +19,7 @@ const Wrap = styled.div`
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background: var(--secondary-grey-300, #f4f7fe);
     #main {
         flex: 1;
         padding: 30px;

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Tables = () => {
     return (
-        <div>
+        <div style={{ display: 'block' }}>
             <h2>Tables</h2>
         </div>
     );

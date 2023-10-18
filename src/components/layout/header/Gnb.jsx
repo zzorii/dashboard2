@@ -10,34 +10,34 @@ const Gnb = () => {
     return (
         <GnbWapper>
             <ul>
-                <li className="active">
+                <li className={location.pathname === '/' ? 'active' : ''}>
                     <Link to="/">
                         <AiFillHome /> Dashboard
                     </Link>
                 </li>
-                <li>
+                <li className={location.pathname === '/market' ? 'active' : ''}>
                     <Link to="/market">
                         <AiOutlineShoppingCart />
                         NFT Marketplace
                     </Link>
                 </li>
-                <li>
+                <li className={location.pathname === '/tables' ? 'active' : ''}>
                     <Link to="/tables">
                         <BsBarChartFill />
                         Tables
                     </Link>
                 </li>
-                <li>
+                <li className={location.pathname === '/kanban' ? 'active' : ''}>
                     <Link to="/kanban">
                         <BsBarChartFill /> Kanban
                     </Link>
                 </li>
-                <li>
+                <li className={location.pathname === '/profile' ? 'active' : ''}>
                     <Link to="/profile">
                         <BsBarChartFill /> Profile
                     </Link>
                 </li>
-                <li>
+                <li className={location.pathname === '/signin' ? 'active' : ''}>
                     <Link to="/signin">
                         <BsBarChartFill /> Sign in
                     </Link>
@@ -59,10 +59,32 @@ const Gnb = () => {
 const GnbWapper = styled.nav`
     ul {
         li {
-            margin-left: 10px;
-            &.active a {
-                color: var(--primary-dark);
-                font-weight: 700;
+            position: relative;
+            margin-left: 3px;
+            &::after {
+                opacity: 0;
+                transition: opacity 1s;
+            }
+            &.active {
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    right: -32px;
+                    transform: translateY(-50%);
+                    width: 4px;
+                    height: 36px;
+                    border-radius: 25px;
+                    background: var(--primary);
+                    opacity: 1;
+                }
+                a {
+                    color: var(--primary-dark);
+                    font-weight: 700;
+                    svg {
+                        color: var(--primary);
+                    }
+                }
             }
             a {
                 display: flex;

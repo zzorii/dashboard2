@@ -10,6 +10,7 @@ ${reset}
         --S_Light: #CBC8EC;
         --primary-light: rgba(90, 84, 164, 0.80);
         --secondary-grey-600: #A3AED0;
+        --Secondary-grey-300: #F4F7FE;
         
 
         --secondary: #FCA311;

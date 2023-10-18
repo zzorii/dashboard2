@@ -1,7 +1,8 @@
-import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator } from '@chakra-ui/react';
+import React from 'react';
+import { Breadcrumb, BreadcrumbItem, BreadcrumbLink } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 
-const History = () => {
+const History = ({ pageName }) => {
     return (
         <Breadcrumb color="secondary_grey_700" fontSize="14px" fontWeight="500">
             <BreadcrumbItem>
@@ -10,8 +11,8 @@ const History = () => {
                 </BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbItem isCurrentPage>
-                <BreadcrumbLink as={Link} to="/tables">
-                    tables
+                <BreadcrumbLink as={Link} to={`/${pageName.toLowerCase()}`}>
+                    {pageName}
                 </BreadcrumbLink>
             </BreadcrumbItem>
         </Breadcrumb>

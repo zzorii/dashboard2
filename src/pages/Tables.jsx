@@ -7,7 +7,7 @@ const Tables = () => {
     return (
         <>
             <Box pl="10px">
-                <History />
+                <History pageName={'table'} />
                 <Title title="Tables" desc="이 페이지는 tables 페이지 입니다." />
             </Box>
         </>

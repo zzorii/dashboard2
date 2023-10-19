@@ -10,7 +10,7 @@ const Tables = () => {
                 <History pagename="tables" />
                 <Title title="Tables" desc="이 페이지는 tables 페이지 입니다." />
             </Box>
-            <Grid flexGrow={'1'} h="200px" templateRows="repeat(2, 1fr)" templateColumns="repeat(2, 1fr)" gap={4}>
+            <Grid flexGrow={'1'} templateRows="repeat(2, 1fr)" templateColumns="repeat(2, 1fr)" gap={4}>
                 <GridItem bg="yellow" />
                 <GridItem bg="papayawhip" />
                 <GridItem bg="blue" />

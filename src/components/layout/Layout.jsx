@@ -5,7 +5,7 @@ import Title from '../common/Tilte';
 import History from '../common/History';
 import { Box } from '@chakra-ui/react';
 
-const Layout = ({ pagename, children }) => {
+const Layout = ({ title, pagename, children }) => {
     // const { pagename, children } = props;
     return (
         <Wrap>
@@ -13,7 +13,7 @@ const Layout = ({ pagename, children }) => {
             <main id="main">
                 <Box pl="10px">
                     <History pagename={pagename} />
-                    <Title pagename={pagename} />
+                    <Title title={title} />
                 </Box>
                 {children}
             </main>

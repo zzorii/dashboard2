@@ -17,7 +17,7 @@ function App() {
             <GlobalStyles />
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/market" element={<MarketPlace />} />
+                <Route path="/marketplace" element={<MarketPlace />} />
                 <Route path="/tables" element={<Tables />} />
                 <Route path="/kanban" element={<Kanban />} />
                 <Route path="/profile" element={<Profile />} />

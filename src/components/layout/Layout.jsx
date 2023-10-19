@@ -11,7 +11,7 @@ const Layout = ({ title, pagename, children }) => {
         <Wrap>
             <Header />
             <main id="main">
-                <Box pl="10px">
+                <Box p="0 0 35px 10px">
                     <History pagename={pagename} />
                     <Title title={title} />
                 </Box>
@@ -24,11 +24,10 @@ const Layout = ({ title, pagename, children }) => {
 const Wrap = styled.div`
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
     padding-left: 290px;
     background: var(--secondary-grey-300, #f4f7fe);
     #main {
-        flex: 1;
+        min-height: 100vh;
         padding: 50px 20px;
     }
 `;

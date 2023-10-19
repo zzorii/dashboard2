@@ -1,17 +1,8 @@
 import React from 'react';
-import Title from '../components/title/Tilte';
-import History from '../components/title/History';
-import { Box } from '@chakra-ui/react';
+import Layout from '../components/layout/Layout';
 
 const Home = () => {
-    return (
-        <>
-            <Box pl="10px">
-                <History pagename="Dashboard" />
-                <Title title="Dashboard" desc="이 페이지는 Dashboard 페이지 입니다." />
-            </Box>
-        </>
-    );
+    return <Layout pagename="DashBoard">dkjafkdjfajdkfajdfkjakjf</Layout>;
 };
 
 export default Home;

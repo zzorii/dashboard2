@@ -1,5 +1,4 @@
 import React from 'react';
-import Layout from './components/layout/Layoyt';
 import { Route, Routes } from 'react-router-dom';
 import Home from './pages';
 import { ChakraProvider, CSSReset } from '@chakra-ui/react';
@@ -16,16 +15,14 @@ function App() {
         <ChakraProvider theme={theme}>
             <CSSReset />
             <GlobalStyles />
-            <Layout>
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/market" element={<MarketPlace />} />
-                    <Route path="/tables" element={<Tables />} />
-                    <Route path="/kanban" element={<Kanban />} />
-                    <Route path="/profile" element={<Profile />} />
-                    <Route path="/signin" element={<SignIn />} />
-                </Routes>
-            </Layout>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/market" element={<MarketPlace />} />
+                <Route path="/tables" element={<Tables />} />
+                <Route path="/kanban" element={<Kanban />} />
+                <Route path="/profile" element={<Profile />} />
+                <Route path="/signin" element={<SignIn />} />
+            </Routes>
         </ChakraProvider>
     );
 }

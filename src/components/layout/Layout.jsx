@@ -13,7 +13,7 @@ const Layout = ({ pagename, children }) => {
             <main id="main">
                 <Box pl="10px">
                     <History pagename={pagename} />
-                    <Title name={pagename} />
+                    <Title pagename={pagename} />
                 </Box>
                 {children}
             </main>

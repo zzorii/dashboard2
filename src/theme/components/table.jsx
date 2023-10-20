@@ -10,6 +10,11 @@ const baseStyle = definePartsStyle({
         borderCollapse: 'collapse',
         width: 'full',
     },
+    thead: {
+        // position: 'sticky',
+        // top: 0,
+        // zIndex: '1',
+    },
     th: {
         fontFamily: 'heading',
         fontWeight: 'bold',
@@ -38,6 +43,9 @@ const variantSimple = definePartsStyle((props) => {
     const { colorScheme: c } = props;
 
     return {
+        thead: {
+            bg: 'white',
+        },
         th: {
             p: '10px',
             color: '#A3AED0',
@@ -49,7 +57,7 @@ const variantSimple = definePartsStyle((props) => {
             tr: {
                 '&:first-child': {
                     td: {
-                        pt: '40px',
+                        pt: '20px',
                     },
                 },
             },

@@ -7,7 +7,6 @@ import {
     TableCaption,
     Thead,
     Tbody,
-    Tfoot,
     Tr,
     Th,
     Td,
@@ -21,10 +20,10 @@ const Development = () => {
                 <Heading size="md">Development Table</Heading>
             </CardHeader>
 
-            <CardBody>
+            <CardBody py={2} px={5}>
                 <TableContainer>
                     {/*  size={['sm', 'md', 'lg']} */}
-                    <Table variant="simple">
+                    <Table variant="simple" size={['sm', 'md', 'lg']}>
                         <TableCaption>Development Table</TableCaption>
                         <Thead>
                             <Tr>

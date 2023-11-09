@@ -1,5 +1,5 @@
-import { createGlobalStyle } from 'styled-components';
-import reset from 'styled-reset';
+import { createGlobalStyle } from "styled-components";
+import reset from "styled-reset";
 const GlobalStyles = createGlobalStyle`
 
 ${reset}
@@ -40,18 +40,18 @@ ${reset}
         --gray-8: #343A40;
         --gray-9: #212529;
         --font-reqular: 1rem;
-        --font-small: 0.8rem
+        --font-small: 0.8rem;
         --max-width: 1200px;
         --header-height: 60px;
 
         --link-default: #F4F7FE;
     }
-    body {
-         background: url(3.jpg) no-repeat 0 0 !important;
-         #root {
-             opacity: 0.8 !important;
-         }
-    }
+    // body {
+    //      background: url(3.jpg) no-repeat 0 0 !important;
+    //      #root {
+    //          opacity: 0.8 !important;
+    //      }
+    // }
     *{
         box-sizing: border-box;
         margin: 0;

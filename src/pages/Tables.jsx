@@ -10,7 +10,6 @@ const Tables = () => {
   return (
     <Layout title="Tables" pagename={"Tables"}>
       <Grid
-        h={"calc(100vh - 50px * 2 - 97px)"}
         templateRows="repeat(2, 1fr)"
         templateColumns="repeat(2, 1fr)"
         gap={4}

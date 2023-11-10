@@ -21,7 +21,7 @@ const Column = () => {
         <Heading size="md">4-Column Table</Heading>
       </CardHeader>
       <CardBody>
-        <TableContainer overflowX={"hidden"} overflowY={"auto"} maxH="296px">
+        <TableContainer>
           <ColumnStyle variant="simple">
             <TableCaption>4-Column Table</TableCaption>
             <Thead>

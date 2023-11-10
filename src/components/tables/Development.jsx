@@ -238,7 +238,7 @@ const Development = () => {
       </CardHeader>
 
       <CardBody py={2} px={5}>
-        <TableContainer overflowX={"hidden"} overflowY={"auto"} maxH="296px">
+        <TableContainer>
           {/*  size={['sm', 'md', 'lg']} */}
           <Table variant="simple">
             <TableCaption>Development Table</TableCaption>

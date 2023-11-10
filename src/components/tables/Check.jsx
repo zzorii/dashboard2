@@ -21,7 +21,7 @@ const Check = () => {
         <Heading size="md">Check Table</Heading>
       </CardHeader>
       <CardBody py={2} px={5}>
-        <TableContainer overflowX={"hidden"} overflowY={"auto"} maxH="296px">
+        <TableContainer>
           <Table variant="simple">
             <TableCaption>Check Table</TableCaption>
             <Thead>

@@ -1,18 +1,18 @@
 import { extendTheme } from "@chakra-ui/react";
-import { textTheme } from "./components/Text";
+import { textTheme } from "./components/text";
 import { tableTheme } from "./components/table";
 import { progressTheme } from "./components/progress";
 import { checkboxTheme } from "./components/checkbox";
+import { cardTheme } from "./components/card";
 // import { containerTheme } from './components/container';
-
 const theme = extendTheme({
   components: {
-    // Container: containerTheme,
-    //컨포넌트: 각 테마의 마지막 export const이름
+    // 컴포넌트 : 각 테마의 마지막 expoert const 이름
     Text: textTheme,
     Table: tableTheme,
     Progress: progressTheme,
     Checkbox: checkboxTheme,
+    Card: cardTheme,
   },
   styles: {
     global: {
@@ -44,9 +44,16 @@ const theme = extendTheme({
   },
   colors: {
     primary: "#4318FF",
+    globalBg: "#F4F7FE",
     secondary_grey_700: "#707EAE",
     Secondary_Grey_600: "#A3AED0",
   },
+  breakpoints: {
+    sm: "480px", // 30em
+    md: "720px", // 48em
+    lg: "1024px", // 62em
+    xl: "1280px", // 80em
+    "2xl": "1440px",
+  },
 });
-
 export default theme;

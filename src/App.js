@@ -16,32 +16,12 @@ function App() {
       <CSSReset />
       <GlobalStyles />
       <Routes>
-        <Route basename={process.env.PUBLIC_URL} path="/" element={<Home />} />
-        <Route
-          basename={process.env.PUBLIC_URL}
-          path="/marketplace"
-          element={<MarketPlace />}
-        />
-        <Route
-          basename={process.env.PUBLIC_URL}
-          path="/tables"
-          element={<Tables />}
-        />
-        <Route
-          basename={process.env.PUBLIC_URL}
-          path="/kanban"
-          element={<Kanban />}
-        />
-        <Route
-          basename={process.env.PUBLIC_URL}
-          path="/profile"
-          element={<Profile />}
-        />
-        <Route
-          basename={process.env.PUBLIC_URL}
-          path="/signin"
-          element={<SignIn />}
-        />
+        <Route path="/" element={<Home />} />
+        <Route path="/marketplace" element={<MarketPlace />} />
+        <Route path="/tables" element={<Tables />} />
+        <Route path="/kanban" element={<Kanban />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/signin" element={<SignIn />} />
       </Routes>
     </ChakraProvider>
   );

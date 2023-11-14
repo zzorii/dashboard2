@@ -18,9 +18,9 @@ import {
   Flex,
   Box,
 } from "@chakra-ui/react";
-import apple from "../../assets/images/tables/apple.svg";
-import android from "../../assets/images/tables/android.svg";
-import windows from "../../assets/images/tables/windows.svg";
+import apple from "../../assets/img/tables/apple.svg";
+import android from "../../assets/img/tables/android.svg";
+import windows from "../../assets/img/tables/windows.svg";
 
 const data = [
   {
